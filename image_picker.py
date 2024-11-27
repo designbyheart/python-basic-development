@@ -4,7 +4,6 @@ from PIL import Image, ImageTk
 import shutil
 import os
 
-
 # Define the function to upload and save the image
 def upload_image():
     file_path = filedialog.askopenfilename()
@@ -16,7 +15,6 @@ def upload_image():
         image_label.image = photo  # Keep a reference to avoid garbage collection
         save_image(file_path)
         messagebox.showinfo("Success", "Image uploaded successfully!")
-
 
 def save_image(file_path):
     save_dir = "saved_images"
